@@ -1,14 +1,14 @@
-class dog {
-	constructor(name, color) {
-		this.name = name
-		this.color = color
-	}
+import { Person } from './src/POO/Person.js'
 
-	speak() {
-		console.log(`${this.name} says woof`)
-	}
-}
+const Osvaldo = new Person(
+	'Osvaldo',
+	'AASO980606HDFRNS05',
+	'Arzate',
+	'Pascle 183',
+	'18',
+	'06/06/2021',
+	'5573771023',
+	'osvarz.new@gmail.com'
+)
 
-const kuma = new dog('kuma', 'gray')
-
-console.log(kuma)
+Osvaldo.sayHi()
