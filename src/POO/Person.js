@@ -9,4 +9,8 @@ export class Person {
 		this.phone = phone
 		this.email = email
 	}
+
+	sayHi() {
+		console.log(`Hola soy ${this.name} ${this.lastName}`)
+	}
 }

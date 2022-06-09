@@ -1,6 +1,6 @@
-import { Person } from './src/POO/Person.js'
+import { Employee } from './src/POO/Employee.js'
 
-const Osvaldo = new Person(
+const osvaldo = new Employee(
 	'Osvaldo',
 	'AASO980606HDFRNS05',
 	'Arzate',
@@ -8,7 +8,8 @@ const Osvaldo = new Person(
 	'18',
 	'06/06/2021',
 	'5573771023',
-	'osvarz.new@gmail.com'
+	'osvarz.new@gmail.com',
+	'001'
 )
 
-Osvaldo.sayHi()
+console.log(osvaldo.workplace)
