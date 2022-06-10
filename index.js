@@ -1,14 +1,15 @@
-import { Person } from './src/POO/Person.js'
+import { Employee } from './src/POO/Employee.js'
 
-const Osvaldo = new Person(
-	'Osvaldo',
-	'AASO980606HDFRNS05',
-	'Arzate',
-	'Pascle 183',
-	'18',
-	'06/06/2021',
-	'5573771023',
-	'osvarz.new@gmail.com'
-)
+const osvaldo = new Employee({
+	name: 'Osvaldo',
+	CURP: 'AASO980606HDFRNS05',
+	lastName: 'Arzate',
+	adress: 'Pascle 183',
+	age: '18',
+	dateBirth: '06/06/2021',
+	phone: '5573771023',
+	email: 'osvarz.new@gmail.com',
+	workplace: '001',
+})
 
-Osvaldo.sayHi()
+console.log(osvaldo.workplace)

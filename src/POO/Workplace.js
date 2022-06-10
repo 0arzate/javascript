@@ -1,12 +1,12 @@
 class Workplace {
-	constructor(
+	constructor({
 		name,
 		adress,
 		manager,
 		employeesAmount,
 		petsAmount,
-		adoptionsAmount
-	) {
+		adoptionsAmount,
+	}) {
 		this.name = name
 		this.adress = adress
 		this.manager = manager

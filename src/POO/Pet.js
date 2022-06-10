@@ -1,5 +1,5 @@
 class Pet {
-	constructor(
+	constructor({
 		name,
 		age,
 		type,
@@ -7,8 +7,8 @@ class Pet {
 		dateBirth,
 		dateAdopted,
 		deathCause,
-		alive = true
-	) {
+		alive = true,
+	}) {
 		this.name = name
 		this.age = age
 		this.type = type

@@ -1,5 +1,5 @@
 export class Person {
-	constructor(name, CURP, lastName, adress, age, dateBirth, phone, email) {
+	constructor({ name, CURP, lastName, adress, age, dateBirth, phone, email }) {
 		this.name = name
 		this.CURP = CURP
 		this.lastName = lastName
@@ -8,5 +8,9 @@ export class Person {
 		this.dateBirth = dateBirth
 		this.phone = phone
 		this.email = email
+	}
+
+	sayHi() {
+		console.log(`Hola soy ${this.name} ${this.lastName}`)
 	}
 }
