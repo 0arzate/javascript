@@ -1,12 +1,12 @@
 class AdoptionDocument {
-	constructor(
+	constructor({
 		dateAdoption,
 		workplaceId,
 		employeeId,
 		petId,
 		custumerId,
-		donationId
-	) {
+		donationId,
+	}) {
 		this.dateAdoption = dateAdoption
 		this.workplaceId = workplaceId
 		this.employee = employeeId

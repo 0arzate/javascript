@@ -1,7 +1,7 @@
 import { Person } from './Person.js'
 
 export class Employee extends Person {
-	constructor(
+	constructor({
 		name,
 		CURP,
 		lastName,
@@ -10,8 +10,8 @@ export class Employee extends Person {
 		dateBirth,
 		phone,
 		email,
-		workplace
-	) {
+		workplace,
+	}) {
 		super(name, CURP, lastName, adress, age, dateBirth, phone, email)
 		this.workplace = workplace
 	}

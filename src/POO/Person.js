@@ -1,5 +1,5 @@
 export class Person {
-	constructor(name, CURP, lastName, adress, age, dateBirth, phone, email) {
+	constructor({ name, CURP, lastName, adress, age, dateBirth, phone, email }) {
 		this.name = name
 		this.CURP = CURP
 		this.lastName = lastName
