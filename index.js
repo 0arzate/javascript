@@ -1,6 +1,6 @@
-import { Employee } from './src/POO/Employee.js'
+import { Person } from './src/POO/Person.js'
 
-const osvaldo = new Employee({
+const osvaldo = new Person({
 	name: 'Osvaldo',
 	CURP: 'AASO980606HDFRNS05',
 	lastName: 'Arzate',
@@ -12,4 +12,4 @@ const osvaldo = new Employee({
 	workplace: '001',
 })
 
-console.log(osvaldo.workplace)
+console.log(Person.getCURP())

@@ -13,4 +13,8 @@ export class Person {
 	sayHi() {
 		console.log(`Hola soy ${this.name} ${this.lastName}`)
 	}
+
+	static getCURP() {
+		console.log('CURP: ' + this.CURP)
+	}
 }
