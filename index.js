@@ -1,1 +1,1 @@
-import './src/POO/static.js'
+import './src/js/shallowCopy.js'
