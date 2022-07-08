@@ -24,5 +24,3 @@ newCopyObject.name = 'Jose'
 newCopyObject.bankAccount.bank = 'CITI Banamex'
 original.lastName = 'Perez Leon'
 original.bankAccount.clave = '0000000000067899'
-
-console.log({ original, newCopyObject })
