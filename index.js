@@ -1,1 +1,1 @@
-import './src/js/XMLHttpRequest.js'
+import './src/js/asyncAwait.js'
