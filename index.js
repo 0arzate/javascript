@@ -1,1 +1,1 @@
-import './src/js/callback.js'
+import './src/js/XMLHttpRequest.js'
