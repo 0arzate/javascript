@@ -1,1 +1,1 @@
-import './src/js/asyncAwait.js'
+import './src/POO/privateProperty.js'
