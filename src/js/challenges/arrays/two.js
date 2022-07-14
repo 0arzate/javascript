@@ -1,22 +1,18 @@
-function solution(array) {
-	return array.filter((item) => {
-		if (item.total >= 100 && item.delivered) {
-			return item
-		}
-	})
-}
+// Consulta el reto aqui --> https://jshero.platzi.com/exercises/2
+
+const solution = (array) => array.map((person) => person.name)
 
 console.log(
 	solution([
 		{
-			customerName: 'Nicolas',
-			total: 100,
-			delivered: true,
+			name: 'Nicolas',
+			lastName: 'Molina',
+			age: 28,
 		},
 		{
-			customerName: 'Zulema',
-			total: 120,
-			delivered: false,
+			name: 'Valentina',
+			lastName: 'Molina',
+			age: 19,
 		},
 	])
 )

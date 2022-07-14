@@ -1,1 +1,1 @@
-import './src/POO/privateProperty.js'
+import './src/js/challenges/arrays/ten.js'

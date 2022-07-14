@@ -1,13 +1,7 @@
+// Consulta el reto aqui --> https://jshero.platzi.com/exercises/1
+
 function solution(array) {
-	const words = []
-
-	array.forEach((word) => {
-		if (word.length >= 4) {
-			words.push(word)
-		}
-	})
-
-	return words
+	return array.map((number) => number * 2)
 }
 
-console.log(solution(['amor', 'sol', 'piedra', 'día']))
+console.log(solution([2, 4, 5, 6]))
