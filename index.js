@@ -1,1 +1,1 @@
-import './src/js/challenges/arrays/ten.js'
+import './src/js/challenges/arrays/fourTeen.js'
