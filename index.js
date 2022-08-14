@@ -1,1 +1,1 @@
-import './src/js/class/inherit.js'
+import './src/js/var.js'
