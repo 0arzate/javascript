@@ -5,3 +5,5 @@ const str = 'Hola mundo'
 console.log('indexOf: ' + str.indexOf('mundo'))
 console.log('includes: ' + str.includes('mun'))
 console.log('slice: ' + str.slice(1, 4))
+console.log('substring: ' + Boolean(str.substr(11, 11)))
+console.log('charAt: ' + str.charAt(5))
