@@ -1,1 +1,1 @@
-import './src/js/var.js'
+import './src/js/stringMethods.js'
