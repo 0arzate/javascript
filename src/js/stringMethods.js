@@ -15,6 +15,10 @@ console.log('search: ' + str.search('dos'))
 console.log('toLowerCase: ' + str.toLowerCase())
 console.log('toUpperCase: ' + str.toUpperCase())
 console.log('replace: ' + str.replace('Hola', 'Adios'))
+console.log("slice: " + str.slice(-5, -1))
+console.log("bold: " + str.bold())
+
+const appNode = document.getElementById("app")
 
 const str2 = ' Hola mundo '
 console.log('trim: ' + str2.trim())
