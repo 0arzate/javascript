@@ -1,1 +1,1 @@
-import './src/js/stringMethods.js'
+import './src/js/iifee.js'
