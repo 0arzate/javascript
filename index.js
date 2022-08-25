@@ -1,1 +1,1 @@
-import './src/js/iifee.js'
+import './src/js/numbersMethods.js'
