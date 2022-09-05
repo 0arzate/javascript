@@ -1,1 +1,1 @@
-import './src/js/numbersMethods.js'
+import './src/js/sngularExam/index.js'

@@ -17,8 +17,8 @@ console.log('toUpperCase: ' + str.toUpperCase())
 console.log('replace: ' + str.replace('Hola', 'Adios'))
 console.log("slice: " + str.slice(-5, -1))
 console.log("bold: " + str.bold())
-
-const appNode = document.getElementById("app")
+console.log("padStart: " + str.padStart(12, '--'))
+console.log("----------------------------------------")
 
 const str2 = ' Hola mundo '
 console.log('trim: ' + str2.trim())
