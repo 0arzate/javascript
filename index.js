@@ -1,1 +1,1 @@
-import './src/js/sngularExam/index.js'
+import './src/js/test-javascript/index.js'
