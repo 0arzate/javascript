@@ -1,4 +1,7 @@
-import { Square } from './src/js/mathematics/Square.js'
+import { Triangle } from './src/js/mathematics/Triangle.js'
 
-const cuadrado = new Square({ side: 10 })
-console.log(cuadrado.perimeter)
+const triangle = new Triangle({ side: 3, base: 4, unitMeasure: 'cm' })
+
+console.log(triangle.perimeter)
+
+console.log(Math.PI)
