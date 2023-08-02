@@ -1,6 +1,6 @@
-const counter = () => {
+function counter() {
   let number = 0
-  return (amount = 0) => {
+  return function (amount = 0) {
     return (number += amount)
   }
 }
