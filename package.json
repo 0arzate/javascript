@@ -1,15 +1,16 @@
 {
-	"name": "javascript",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"server": "json-server --watch db.json --port 5001"
-	},
-	"author": "",
-	"license": "MIT",
-	"dependencies": {
-		"json-server": "0.17.0"
-	}
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server --watch db.json --port 5001"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "0.17.0"
+  }
 }
