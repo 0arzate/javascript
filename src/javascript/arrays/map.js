@@ -12,5 +12,14 @@ const newArray = array.map(function(element, index, array) {
     return element + 1
 }, obj)
 
-console.log({ newArray })
-console.log({ array })
+const arrayObj = [{ name: "Osvaldo", age: 25 }, { name: "Jose", age: 30 }, { name: "Luis", age: 55 }]
+
+const newArrayObj = arrayObj.map(obj => {
+    return {
+        ...obj,
+        name: "Pedro"
+    }
+})
+
+console.log("ORIGINAL:", arrayObj)
+console.log("CLON:", newArrayObj)
