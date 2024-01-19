@@ -4,7 +4,7 @@ const pedro = { name: 'Pedro', adreess: { city: 'NL' } }
 
 const objects = [jose, pedro]
 
-const strings = ['Jose', 'Perez', 'Osavaldo', 'marlon']
+const strings = ['Jose', 'Perez', 'Osavaldo', 'marlon', "Jose"]
 
 const booleans = [true]
 
