@@ -1,5 +1,5 @@
 export default function myFunction() {
-  console.log("I'm a module")
+  console.log("I'm a default renamed module")
 }
 
 export const otherFunction = () => {
