@@ -40,20 +40,30 @@ class CustomArray {
 			return undefined
 		}
 
-    delete this.data[0]
-		this.length--
-		console.log({ data: this.data })
-		for (let index = 0; index <= this.length; index++) {
-			const currentValue = index + 1
-			this.data[index] = this.data[currentValue]
+		const firstElement = this.data[0]
+
+		for(let i = 0; i < this.length; i++) {
+			const currentValue = this.data[i + 1]
+			const newIndex = i
+
+			this.data[newIndex] = currentValue
 		}
+
+		delete this.data[this.length - 1]
+		this.length--
+
+		return firstElement
   }
 }
 
 const myArray = new CustomArray()
 
-myArray.unshift("!!!")
-myArray.unshift("Platzinauta")
-myArray.unshift("lograste")
-myArray.unshift("lo")
+myArray.unshift("Suerte")
+myArray.unshift("Con el")
+myArray.unshift("desafio")
+myArray.unshift("platzinauta")
+myArray.unshift("Un 🐱 random en el desafío")
+myArray.unshift("Nuevo")
+
+myArray.shift()
 console.log(myArray)
