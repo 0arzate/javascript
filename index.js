@@ -1,6 +1,8 @@
-import { CustomArray } from "./src/dataStructures/customArray.js";
+import { myHashTable } from "./src/dataStructures/hashTable.js";
 
-const array = new CustomArray()
+myHashTable.set("Osvaldo", { age: 26, lastName: "Arzate Santiago", name: "Osvaldo" })
+myHashTable.set("Josabeth", { age: 29, lastName: "Nava Hernandez", name: "Josabeth" })
+myHashTable.set("Daniel", { age: 28, lastName: "Santiago Rodriguez", name: "Daniel" })
 
-console.log(array.set("Juan"))
-console.log(array.get(0))
+console.log("myHashTable:", myHashTable)
+myHashTable.getAllKeys()
