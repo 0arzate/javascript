@@ -1,8 +1,8 @@
-import { myHashTable } from "./src/dataStructures/hashTable.js";
+import { MySinglyLinkedList } from "./src/dataStructures/singlyLinkedList.js";
 
-myHashTable.set("Osvaldo", { age: 26, lastName: "Arzate Santiago", name: "Osvaldo" })
-myHashTable.set("Josabeth", { age: 29, lastName: "Nava Hernandez", name: "Josabeth" })
-myHashTable.set("Daniel", { age: 28, lastName: "Santiago Rodriguez", name: "Daniel" })
 
-console.log("myHashTable:", myHashTable)
-myHashTable.getAllKeys()
+const singlyLinkedList = new MySinglyLinkedList(1)
+singlyLinkedList.append(2)
+singlyLinkedList.append(3)
+singlyLinkedList.prepend(0)
+console.log(singlyLinkedList)
