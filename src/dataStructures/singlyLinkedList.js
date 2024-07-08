@@ -30,4 +30,24 @@ export class MySinglyLinkedList {
     this.length++
     return this
   }
+
+  insert(index, value) {
+    if(index >= this.length) {
+      return this.append(value)
+    }
+
+    const newNode = new Node(value)
+    let currentIndex = 0
+    let currentNode = this.head
+    let previousNode = null
+
+    while(index >= currentIndex) {
+      previousNode = currentNode
+      currentNode = previousNode.next
+      currentIndex++
+    }
+
+    previousNode.next = newNode
+    newNode.next = currentNode
+  }
 }
