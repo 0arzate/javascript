@@ -36,6 +36,10 @@ export class MySinglyLinkedList {
       return this.append(value)
     }
 
+    if(index === 0) {
+      return this.prepend(value)
+    }
+
     const newNode = new Node(value)
     let currentIndex = 0
     let currentNode = this.head
@@ -49,5 +53,31 @@ export class MySinglyLinkedList {
 
     previousNode.next = newNode
     newNode.next = currentNode
+  }
+
+  delete(index) {
+    const hasIndex = index ?? false
+
+    if(!hasIndex || index > this.length) {
+      return undefined
+    }
+
+    let currentIndex = 0
+    let currentNode = this.head
+    let previousNode = null
+
+    while(index >= currentIndex) {
+      previousNode = currentNode
+      currentNode = previousNode.next
+      currentIndex++
+    }
+
+    if(index === 0) {
+      this.head = currentNode
+    }
+
+    previousNode.next = currentNode.next
+
+    this.length--
   }
 }
