@@ -1,8 +1,9 @@
-import { MySinglyLinkedList } from "./src/dataStructures/singlyLinkedList.js";
+import { Stack } from "./src/dataStructures/stack.js"
 
+const myStack = new Stack()
 
-const singlyLinkedList = new MySinglyLinkedList(1)
-singlyLinkedList.append(2)
-singlyLinkedList.append(3)
-singlyLinkedList.delete(1)
-console.log(singlyLinkedList)
+myStack.push(0)
+myStack.push(1)
+myStack.push(2)
+myStack.peek()
+console.log(myStack)
