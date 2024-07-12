@@ -1,9 +1,12 @@
-import { Stack } from "./src/dataStructures/stack.js"
+import { Tree } from "./src/dataStructures/tree.js"
 
-const myStack = new Stack()
+const myTree = new Tree()
 
-myStack.push(0)
-myStack.push(1)
-myStack.push(2)
-myStack.peek()
-console.log(myStack)
+myTree.insert(101)
+myTree.insert(105)
+myTree.insert(33)
+myTree.insert(9)
+myTree.insert(10)
+
+
+console.log(myTree)
