@@ -1,16 +1,19 @@
-import Chat from "./chat.js";
+import ChatRoom from "./chatRoom.js";
 import ChatManager from "./chatManager.js";
 import User from "./user.js";
 
 const chatManager = new ChatManager();
 
-const userOne = new User({ name: "Osvaldo" })
-const userTwo = new User({ name: "Juan" })
-const userThree = new User({ name: "Daniel" })
-const userFour = new User({ name: "Joss" })
+const userOne = new User({ name: "Osvaldo", userName: "Oarzate" })
+const userTwo = new User({ name: "Juan", userName: "JuanDc" })
+const userThree = new User({ name: "Daniel", userName: "DanR" })
+const userFour = new User({ name: "Joss", userName: "Josa" })
 
-const chatGroup = new Chat({ name: "Chat one" })
+const chatGroup = new ChatRoom({ name: "Chat one" })
 
-chatGroup.usersList.push(userOne)
-chatGroup.usersList.push(userTwo)
-chatGroup.usersList.push(userThree)
+chatGroup.registerUser(userOne)
+chatGroup.registerUser(userTwo)
+chatGroup.registerUser(userThree)
+
+userOne.sendMessage("Hola amigo", userTwo)
+userTwo.sendMessage("Hola, como estas?", userOne)
