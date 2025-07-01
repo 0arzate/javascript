@@ -12,7 +12,15 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "standard": "17.1.2",
     "vite": "^6.3.5",
     "vitest": "3.0.9"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json",
+    "env": {
+      "browser": true,
+      "es2021": true
+    }
   }
 }

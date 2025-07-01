@@ -1,35 +1,35 @@
-import { navigate } from "../../index.js";
+import { navigate } from '../../index.js'
 
 class HomePage extends HTMLElement {
-  static get is() {
-    return 'home-page';
+  static get is () {
+    return 'home-page'
   }
 
-  constructor() {
-    super();
-    this.attachShadow({ mode: 'open' });
+  constructor () {
+    super()
+    this.attachShadow({ mode: 'open' })
   }
 
-  connectedCallback() {
-    this.render();
-    this.updatePageTitle();
-    this.addEventListeners();
+  connectedCallback () {
+    this.render()
+    this.updatePageTitle()
+    this.addEventListeners()
   }
 
-  addEventListeners() {
-    const button = this.shadowRoot.querySelector('button');
+  addEventListeners () {
+    const button = this.shadowRoot.querySelector('button')
 
-    button.addEventListener('click', (ev) => navigate(ev.target.id));
+    button.addEventListener('click', (ev) => navigate(ev.target.id))
   }
 
-  updatePageTitle() {
+  updatePageTitle () {
     const title = document.querySelector('title')
 
     title.textContent = 'Home'
   }
 
-  get template() {
-    const template = document.createElement('template');
+  get template () {
+    const template = document.createElement('template')
 
     template.innerHTML = `
       <main>
@@ -39,12 +39,12 @@ class HomePage extends HTMLElement {
       </main>
     `
 
-    return template;
+    return template
   }
 
-  render() {
-    this.shadowRoot.appendChild(this.template.content.cloneNode(true));
+  render () {
+    this.shadowRoot.appendChild(this.template.content.cloneNode(true))
   }
 }
 
-customElements.define(HomePage.is, HomePage);
+customElements.define(HomePage.is, HomePage)
