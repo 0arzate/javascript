@@ -1,3 +1,4 @@
+import './components/simple-card/simple-card.js';
 class SkeletonPage extends HTMLElement {
   static get is() {
     return 'skeleton-page'
@@ -18,6 +19,7 @@ class SkeletonPage extends HTMLElement {
     template.innerHTML = `
       <main>
         <h1>Skeleton page</h1>
+        <simple-card isLoading></simple-card>
       </main>
     `
 
