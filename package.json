@@ -1,0 +1,25 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "This repository is for practicing javascript concepts and coding challenges",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0arzate/javascript.git"
+  },
+  "keywords": [
+    "javascript",
+    "coding-challenges",
+    "practice"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/0arzate/javascript/issues"
+  },
+  "homepage": "https://github.com/0arzate/javascript#readme"
+}
