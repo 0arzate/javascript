@@ -23,6 +23,12 @@
   },
   "homepage": "https://github.com/0arzate/javascript#readme",
   "devDependencies": {
+    "standard": "17.1.2",
     "vitest": "4.0.15"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
   }
 }

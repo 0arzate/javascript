@@ -1,12 +1,12 @@
-function manufactureGifts(giftsToProduce) {
-  const gifts = [];
+export function manufactureGifts (giftsToProduce) {
+  const gifts = []
 
   giftsToProduce.forEach((gift) => {
-    if(gift.quantity <= 0) {
+    if (gift.quantity <= 0) {
       return
     }
 
-    for(let i = 1; i <= gift.quantity; i++) {
+    for (let i = 1; i <= gift.quantity; i++) {
       gifts.push(gift.toy)
     }
   })
